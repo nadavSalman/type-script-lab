@@ -67,3 +67,20 @@ for (var i = 0; i < factory_product_array.length; i++) {
         console.log(prod.toUpperCase());
     }
 }
+//declare a Tuple ,  a typescript ytpe :
+var server_crd;
+server_crd = ["sfdetd", "ddt", 12, 33];
+console.log(server_crd);
+//only push is alawd to overide the tuple 
+server_crd.push('new data');
+console.log(server_crd);
+//a coustom type with enum
+var rangers;
+(function (rangers) {
+    rangers[rangers["low"] = 0] = "low";
+    rangers[rangers["middle"] = 30] = "middle";
+    rangers[rangers["high"] = 70] = "high";
+})(rangers || (rangers = {}));
+var state;
+state = -2;
+console.log(state);

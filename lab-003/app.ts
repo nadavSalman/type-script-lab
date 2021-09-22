@@ -100,5 +100,30 @@ for (let i = 0;i < factory_product_array.length;i++){
   for(const prod of factory_product_array[i].tags){
     console.log(prod.toUpperCase());
   }
-  
 }
+
+
+
+
+//declare a Tuple ,  a typescript ytpe :
+ let server_crd:[string,string,number,number];
+ server_crd = ["sfdetd","ddt",12,33]
+ console.log(server_crd);
+
+ //only push is alawd to overide the tuple 
+ server_crd.push('new data');
+ console.log(server_crd);
+
+
+
+ //a coustom type with enum
+
+
+enum rangers {low = 0, middle = 30 ,high =  70}
+
+ 
+let state:rangers ;
+state = -2;
+console.log(state);
+
+
